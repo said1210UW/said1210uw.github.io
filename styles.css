@@ -1,0 +1,325 @@
+body {
+    background-color: #B2BEB5;
+    font-family: System-ui;
+    font-style: normal;
+    margin: 0;
+}
+
+body, header, main, nav,#face-section, #name-section, #socialmedia-section, .experience-container, 
+.title-container, .accomplishments-container,
+.project-card, .info-container, 
+.project-container, .jobs, .project-card, .img-container, .accomplishments, .jobs-container {
+    display: flex;
+   
+}
+
+body, header, #face-section, #name-section, .experience-container, 
+.accomplishments-container, .jobs, .info-container, .accomplishments, .jobs-container {
+     flex-direction: column;
+}
+
+body, header, nav, #face-section, .jobs, .project-card, 
+#projects-area h1, #projects-area a, .experience-container h1  {
+    padding: 2%;
+}
+
+header {
+    padding-left: 0%;
+}
+
+main {
+    height: 100vh;
+}
+
+main, .img-container, .info-container {
+    justify-content: center;
+}
+
+main, #projects-area {
+    width: 100%;
+}
+
+main, .project-container {
+    flex-wrap: wrap;
+}
+
+#index-main {
+   align-content: start; 
+}
+
+h1 {
+    font-family: 'Koh Santepheap', sans-serif;
+    font-size: 4em;
+    margin-bottom: 0;
+    
+}
+
+h1, h2, #name-section > p, #face-section {
+    text-align: center;
+}
+
+h1, .subtitle {
+    font-weight: 400;
+}
+
+nav {
+    justify-content: flex-start;
+}
+
+a, #socialmedia-section a {
+    text-decoration: none;
+}
+
+nav a {
+    color: black;
+    padding: 14px 16px;
+    
+}
+
+nav a, #socialmedia-section a {
+    margin-right: 10px;
+}
+
+nav a:hover, #socialmedia-section a:hover {
+    background-color: rgb(8, 1, 1);
+    color: #B2BEB5;
+}
+
+nav a:hover, .jobs, .project-card{
+    border-radius: 20px;
+}
+
+#socialmedia-section a:hover {
+    height: 40px;
+    width: 40px;
+    border-radius: 5px;
+    box-shadow:
+    0 4px 8px 0 rgba(0, 0, 0, 0.2),
+    0 6px 20px 0 rgba(0, 0, 0, 0.19);
+
+}
+
+#name-section > p {
+    max-width: 700px;
+    font-size: 1em;
+    margin: 0 auto;
+    letter-spacing: 0.5px;
+    width: 65%;
+}
+
+#face-section img {
+    max-width: 100%;
+    height: auto;
+    
+}
+
+#face-section img, .title-container > img {
+    border-radius: 50%;
+}
+
+#socialmedia-section, .experience-container h1 {
+     font-size: 2em;
+}
+
+#socialmedia-section a {
+    padding: 20px;
+    font-size: 30px;
+    width: 1em;
+    height: 1em;
+    margin-top: 0.5em;
+    border-radius: 40%;
+
+}
+
+@media (max-width: 768px) {
+    body, header {
+        padding: 5%;
+    }
+
+    h1 {
+        font-size: 2.5em;
+    }
+
+    #name-section > p {
+        width: 90%;
+    }
+}
+
+#face-section img {
+    width: 20em;  /* Set width to 20em */
+    height: 20em; /* Set height to 20em */
+    padding-bottom: 2%;
+}
+
+#socialmedia-section {
+    justify-content: space-evenly;
+    width: 10em;
+}
+
+h2, .experience-container h1, #projects-area h1, .experience-container h1 { 
+    font-weight: 300;
+}
+
+.subtitle {
+    font-family:"amiri";
+    color: hsl(0 0% 0% / 0.7);
+    font-size: 2rem;
+    opacity: 0;
+    transform: translateY(3rem);
+    animation: fadeInUp 2s ease forwards;
+}
+
+@keyframes typewriter {
+  to {
+    left: 100%;
+  }
+}
+
+@keyframes fadeInUp {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.experience-container {
+    width: 75%;
+}
+
+.experience-container, #projects-area {
+    margin-right: auto;
+}
+
+.project-container {
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.project-card, .jobs {
+    transition: transform 0.3s ease;
+}
+
+.project-card:hover, .jobs:hover {
+    transform: scale(1.05);
+}
+
+.jobs {
+    max-width: 90em;
+}
+
+.jobs h2, .experience-container h1 { 
+    text-align: left;
+}
+
+.jobs, .project-card {
+    background-color: #e5e4e2;  
+    margin-bottom: 2%;
+}
+
+.jobs, .project-card, #socialmedia-section a{
+    color: #333;
+}  
+
+.jobs:hover, .project-card:hover {
+    box-shadow:
+    0 4px 8px 0 rgba(0, 0, 0, 0.2),
+    0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    
+}
+
+.jobs:hover, .project-card:hover, nav a:hover, #socialmedia-section a:hover {
+    transition-duration: 350ms;
+
+}
+
+.jobs:hover, .project-card:hover, nav a:hover, #socialmedia-section a:hover {
+    transition-property: all;
+}
+
+.jobs h2 {
+    font-size: 300;
+}
+
+.jobs h3 {
+    font-weight: 600;
+    font-style: normal;
+}
+
+.title-container, .project-card {
+    justify-content: space-between;
+}
+
+.title-container > img {
+    width: 5em;
+    height: 5em;
+}
+
+.project-card  img {
+    width: 30em;
+    height: 25em;
+}
+
+.img-container {
+    padding: 2.5%;
+    background-color: #6e6e6e;
+    border-radius: 10px;
+}
+
+.info-container, .img-container, #face-section {
+    align-items: center;
+}
+
+.info-container > p {
+    max-width: 10em;
+    padding-left: 10%;
+}
+
+.project-card {
+    width: 50em;
+}
+
+#projects-area, .experience-container{
+    margin-left: auto;
+}
+
+#projects-area h1 {
+    padding-left: 7.5%;
+}
+
+#projects-area h1, .experience-container h1 {
+     padding-top: 0%;
+}
+
+.experience-container h1 {
+    padding-left: 3%;
+}
+
+#projects-area h1, .experience-container h1 {
+    font-size: 3em;
+}
+
+.accomplishments {
+    max-width: 65em;
+    list-style-type: '- ';
+}
+
+#Work-Title {
+    padding-left: 0%;
+}
+
+.jobs, .project-card {
+    opacity: 0; /* Initially hidden */
+    transform: translateY(20px); /* Slightly move down */
+    animation: fadeIn 0.8s ease-in-out forwards;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
