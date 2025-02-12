@@ -1,7 +1,5 @@
 # Welcome to My Portfolio  
 
-## Explore My Work and Experience  
-
 Welcome to my portfolio! Here, you'll find insights into my background, skills, and accomplishments.  
 
 ### What You’ll Find:  
