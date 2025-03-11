@@ -19,7 +19,7 @@ body, header, #face-section, #name-section, .experience-container,
 }
 
 body, header, nav, #face-section, .jobs, .project-card, 
-#projects-area h1, #projects-area a, .experience-container h1  {
+#projects-area h1, #projects-area a, .experience-container h1 {
     padding: 2%;
 }
 
@@ -323,3 +323,4 @@ h2, .experience-container h1, #projects-area h1, .experience-container h1 {
         transform: translateY(0);
     }
 }
+
